@@ -1,0 +1,229 @@
+/* ================== RESET DASAR ================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #FFF9FB; /* pastel pink lembut */
+  color: #555;
+  line-height: 1.6;
+}
+
+/* ================== HEADER ================== */
+header {
+  background: linear-gradient(135deg, #F8BBD0, #E1BEE7); /* pink + lavender pastel */
+  color: #444;
+  text-align: center;
+  padding: 40px 15px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+}
+header h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+header p {
+  font-size: 1rem;
+  margin-top: 8px;
+  color: #666;
+}
+
+/* ================== NAVIGASI ================== */
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: #FFE0B2; /* peach pastel */
+  padding: 10px 0;
+  border-bottom: 1px solid #f5cdaa;
+}
+nav a {
+  padding: 12px 20px;
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  transition: background 0.3s, color 0.3s;
+}
+nav a:hover {
+  background: #fdd5a7;
+  border-radius: 20px;
+  color: #222;
+}
+
+/* ================== CONTAINER UMUM ================== */
+.container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px 20px;
+}
+
+/* ================== CARD UMUM ================== */
+.card {
+  flex: 1 1 250px;
+  max-width: 280px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+.card h3 {
+  margin: 15px;
+  color: #9c27b0; /* lavender gelap */
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.card p {
+  margin: 0 15px 15px;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* ================== PRODUK (GRID) ================== */
+.category {
+  padding: 40px 20px;
+}
+.category h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #b35b8b; /* pink pastel lebih tua */
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* ================== FORM KONTAK ================== */
+.form-container {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 25px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+.form-container h2 {
+  text-align: center;
+  color: #d81b60;
+  margin-bottom: 15px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+form label {
+  margin-top: 10px;
+  font-weight: 500;
+}
+form input,
+form textarea {
+  padding: 12px;
+  margin-top: 6px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  font-size: 0.9rem;
+}
+form button {
+  margin-top: 15px;
+  padding: 12px;
+  background: #E1BEE7; /* lavender pastel */
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #444;
+  transition: background 0.3s;
+}
+form button:hover {
+  background: #d1a7d9;
+}
+
+/* ================== FOOTER ================== */
+footer {
+  background: #F8BBD0; /* pink pastel */
+  color: #444;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  font-size: 0.9rem;
+}
+
+/* ================== TIPS KESEHATAN ================== */
+.tips-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+  padding: 40px 20px;
+}
+.tip-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.tip-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+}
+.icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #444;
+}
+/* Warna pastel ikon */
+.pastel-pink { background: #F8BBD0; }
+.pastel-purple { background: #E1BEE7; }
+.pastel-peach { background: #FFE0B2; }
+.pastel-mint { background: #B2DFDB; }
+.pastel-blue { background: #BBDEFB; }
+.pastel-yellow { background: #FFF9C4; }
+.tip-card h3 {
+  margin-bottom: 10px;
+  color: #b35b8b;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.tip-card p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* ================== RESPONSIF ================== */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+  header h1 {
+    font-size: 1.7rem;
+  }
+  .card img {
+    height: 150px;
+  }
+}
